@@ -213,5 +213,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-10e46bd7-219c-45d8-ab4b-9566fe9925b7.mp4",
+        "metadata": {
+            "title": "I Walked Away. You Looked Back. Coincidence?",
+            "description": "I saunter away like I own the sunset, then turn my head just enough to make the story begin. I'm Luzara Voss \u2014 equal parts runway, mystery, and a little mischief. Tell me what that single look says: revenge, romance, or secret mission? Best answer gets a follow and a cheeky emoji. Want more late-night catwalk magic? Stay close. #vibes #catwalkmodel #model #walking #luzaravoss",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": true,
+                "youtube": false
+            }
+        }
     }
 ]
