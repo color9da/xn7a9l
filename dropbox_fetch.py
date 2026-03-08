@@ -3,6 +3,7 @@ Dropbox Integration Module with Auto Token Refresh
 Uses refresh token to get new access tokens automatically for automation.
 """
 import os
+import json
 import dropbox
 from dotenv import load_dotenv
 from pathlib import Path
@@ -16,11 +17,25 @@ DROPBOX_REFRESH_TOKEN = os.getenv("DROPBOX_REFRESH_TOKEN")
 DROPBOX_FOLDER = os.getenv("DROPBOX_FOLDER", "/luzara ross")
 LOCAL_INPUT_DIR = os.getenv("LOCAL_INPUT_DIR", "Videos")
 
+PUBLISHED_LOG = "published_videos.json"
+
+
+def get_published_videos():
+    """Get list of already published video names."""
+    if os.path.exists(PUBLISHED_LOG):
+        with open(PUBLISHED_LOG, 'r', encoding='utf-8') as f:
+            try:
+                data = json.load(f)
+                # Extract video names from the log
+                return [item.get('video_name', '') for item in data]
+            except json.JSONDecodeError:
+                return []
+    return []
+
 
 def get_dropbox_client():
     """Initialize and return Dropbox client with refresh token."""
     if DROPBOX_REFRESH_TOKEN and DROPBOX_APP_KEY and DROPBOX_APP_SECRET:
-        # Use refresh token for long-lived access
         dbx = dropbox.Dropbox(
             app_key=DROPBOX_APP_KEY,
             app_secret=DROPBOX_APP_SECRET,
@@ -29,7 +44,6 @@ def get_dropbox_client():
         print("Dropbox initialized with refresh token (NEVER EXPIRES)")
         return dbx
     elif DROPBOX_ACCESS_TOKEN:
-        # Fallback to access token (expires in 4 hours)
         dbx = dropbox.Dropbox(DROPBOX_ACCESS_TOKEN)
         print("Dropbox initialized with access token (expires in 4 hours)")
         return dbx
@@ -43,7 +57,7 @@ def list_dropbox_videos(dbx):
         entries = dbx.files_list_folder(DROPBOX_FOLDER).entries
         video_extensions = ('.mp4', '.mov', '.avi', '.mkv')
         videos = [
-            entry for entry in entries 
+            entry for entry in entries
             if entry.name.lower().endswith(video_extensions)
         ]
         return videos
@@ -65,49 +79,58 @@ def download_video(dbx, entry, local_path):
 
 def fetch_one_video_from_dropbox():
     """
-    Fetch ONE video from Dropbox for processing.
-    
+    Fetch ONE NEW video from Dropbox for processing.
+    Checks published_videos.json to skip already processed videos.
+
     Returns:
         Path to downloaded video or None
     """
     # Ensure local input directory exists
     Path(LOCAL_INPUT_DIR).mkdir(parents=True, exist_ok=True)
-    
+
     print("=" * 60)
     print("FETCHING VIDEO FROM DROPBOX")
     print("=" * 60)
-    
+
+    # Get list of already published videos
+    published = get_published_videos()
+    print(f"Already published: {len(published)} video(s)")
+    if published:
+        for vid in published[:3]:  # Show first 3
+            print(f"  - {vid}")
+        if len(published) > 3:
+            print(f"  ... and {len(published) - 3} more")
+
     try:
         dbx = get_dropbox_client()
     except ValueError as e:
         print(f"Error: {e}")
         return None
-    
+
     videos = list_dropbox_videos(dbx)
-    
+
     if not videos:
         print("No videos found in Dropbox folder.")
         return None
-    
-    print(f"Found {len(videos)} video(s) in Dropbox.")
-    
-    # Find first video not yet processed
-    processed_dir = "Processed_Videos"
+
+    print(f"\nFound {len(videos)} video(s) in Dropbox.")
+
+    # Find first video NOT in published list
     for entry in videos:
-        local_path = os.path.join(LOCAL_INPUT_DIR, entry.name)
-        processed_path = os.path.join(processed_dir, entry.name)
+        video_name = entry.name
         
-        # Skip if already processed
-        if os.path.exists(processed_path):
-            print(f"Skipping {entry.name} - already processed")
+        # Check if already published
+        if video_name in published:
+            print(f"Skipping {video_name} - already published")
             continue
-        
+
         # Download this video
+        local_path = os.path.join(LOCAL_INPUT_DIR, video_name)
         if download_video(dbx, entry, local_path):
-            print(f"\nSelected: {entry.name}")
+            print(f"\n✅ Selected: {video_name}")
             return local_path
-    
-    print("All videos have already been processed.")
+
+    print("\n✅ All videos have already been published.")
     return None
 
 
