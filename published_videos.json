@@ -183,5 +183,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-3a9af26e-c54c-40be-8286-85965fc245577635.mp4",
+        "metadata": {
+            "title": "I Walked Away Like a Boss - Then Turned and Collected Your Follow",
+            "description": "I'm Luzara Voss: I walk away, I look back, and I officially file a claim on your attention. If my turn didn't make you hit follow, did the clip even count? Drop an emoji \u2014 \ud83d\udd25 for fierce, \ud83d\udd76\ufe0f for cool, \ud83d\udc60 for dramatic \u2014 and tell me which city I should strut into next. Follow for more runway receipts and tag a friend who needs this catwalk energy. #vibes #catwalkmodel #model #walking #boss #highfashion #lookback #runway #luzaravoss",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": true,
+                "youtube": false
+            }
+        }
     }
 ]
