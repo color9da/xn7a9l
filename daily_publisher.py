@@ -45,15 +45,24 @@ def mark_as_published(video_name, metadata):
 def select_video(specific_video=None):
     published = [item["video_name"] for item in get_already_published()]
     all_videos = sorted(glob.glob(os.path.join(PROCESSED_DIR, "*.mp4")))
-    
+
     if specific_video:
-        vid_path = os.path.join(PROCESSED_DIR, specific_video)
-        if os.path.exists(vid_path):
-            if specific_video in published:
-                print(f"⚠️ Video {specific_video} was flagged as already published, but proceeding anyway as explicitly requested.")
-            return vid_path, specific_video
+        # specific_video might be a full path or just a filename
+        if os.path.exists(specific_video):
+            # It's a full path
+            vid_path = specific_video
+            name = os.path.basename(specific_video)
         else:
-            print(f"❌ Error: Specific video {specific_video} not found in {PROCESSED_DIR}")
+            # It's just a filename, join with PROCESSED_DIR
+            vid_path = os.path.join(PROCESSED_DIR, specific_video)
+            name = specific_video
+            
+        if os.path.exists(vid_path):
+            if name in published:
+                print(f"⚠️ Video {name} was flagged as already published, but proceeding anyway as explicitly requested.")
+            return vid_path, name
+        else:
+            print(f"❌ Error: Specific video {name} not found")
             return None, None
 
     for vid in all_videos:
