@@ -303,5 +303,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-5b21c782-d0e0-4867-b26a-95d82c5e12e4.mp4",
+        "metadata": {
+            "title": "I Walked Off With the Lighting (Sorry, Not Sorry)",
+            "description": "I saunter away like I own the skyline \u2014 then I glance back and the whole scene takes notes. If my look made you hit replay, drop a \ud83d\udd25 below. Caption battle: 1) 'Oops, stole the spotlight' or 2) 'Leaving, but make it fashion' \u2014 comment 1 or 2 and follow me for more runway mischief. Double tap if you'd turn back too. #vibes #catwalkmodel #model #walking #sassy #confidence #glam",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": true,
+                "youtube": false
+            }
+        }
     }
 ]
