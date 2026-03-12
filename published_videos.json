@@ -363,5 +363,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "badeda79-9d91-4955-b173-e481927a7c17.mp4",
+        "metadata": {
+            "title": "i walked away... then i looked back \u2014 did i just break the internet?",
+            "description": "i walked away like it was a movie, then of course i looked back \u2014 guilty as charged. if i made you do a double-take, drop an '\ud83d\udc40' and tell me: \u2764\ufe0f romantic, \u2728 dreamy, or \ud83d\udd25 runway? follow me for more slow-motion heart thefts and behind-the-scenes sass. #vibes #catwalkmodel #model #walking #romantic #dreamy #lookback #luzaravoss #followme",
+            "success_flags": {
+                "instagram_reel": false,
+                "instagram_story": false,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": true,
+                "youtube": false
+            }
+        }
     }
 ]
