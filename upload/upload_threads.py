@@ -9,8 +9,9 @@ import time
 from pathlib import Path
 from dotenv import load_dotenv
 
-# Load environment variables
-load_dotenv()
+# Load environment variables with override
+env_path = Path(__file__).parent.parent / '.env'
+load_dotenv(dotenv_path=env_path, override=True)
 
 def upload_to_threads(video_path, text):
     """
