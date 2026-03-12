@@ -378,5 +378,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-0c8e2984-8e82-4b44-8a2a-ff9376312638 (1).mp4",
+        "metadata": {
+            "title": "How a Boss Walks Out: I Left the Meeting, Kept the Crown",
+            "description": "I walk away like the runway is my boardroom, then I glance back to sign off on the look. Did I just terminate boring outfits or file a fashion complaint? Drop a \ud83d\udd25 if I should be your 'ceo of chic' and caption this moment \u2014 funniest title gets a follow. Follow for more executive-level slays. #vibes #catwalkmodel #model #walking #boss #highfashion #glam #lookback #style #runway #modeling",
+            "success_flags": {
+                "instagram_reel": false,
+                "instagram_story": false,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": true,
+                "youtube": false
+            }
+        }
     }
 ]
