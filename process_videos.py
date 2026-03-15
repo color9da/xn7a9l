@@ -106,7 +106,36 @@ def process_single_video(video_path):
 
     if result.returncode == 0:
         print(f"✅ Saved: {out_path} (ENHANCED)")
-        return out_path
+        
+        # Step: Double the video duration by concatenating with itself
+        print(f"\n  Doubling video duration (concatenating video with itself)...")
+        doubled_path = os.path.join(output_dir, "doubled_" + filename)
+        
+        cmd_concat = [
+            "ffmpeg", "-y",
+            "-i", out_path,
+            "-i", out_path,
+            "-filter_complex", "[0:v][0:a][1:v][1:a]concat=n=2:v=1:a=1[v][a]",
+            "-map", "[v]",
+            "-map", "[a]",
+            "-c:v", "libx264", "-preset", "slow", "-crf", "16",
+            "-profile:v", "high", "-pix_fmt", "yuv420p",
+            "-c:a", "aac", "-b:a", "192k",
+            doubled_path
+        ]
+        
+        concat_result = subprocess.run(cmd_concat, capture_output=True, text=True)
+        
+        if concat_result.returncode == 0:
+            # Remove the non-doubled version, keep only the doubled one
+            os.remove(out_path)
+            # Rename doubled file to the original output name
+            os.rename(doubled_path, out_path)
+            print(f"✅ Video doubled successfully (duration: 2x original)")
+            return out_path
+        else:
+            print(f"⚠️  Doubling failed, keeping original: {concat_result.stderr[:200]}")
+            return out_path
     else:
         print(f"❌ Failed: {result.stderr[:200]}")
         return None
