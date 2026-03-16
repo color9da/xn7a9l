@@ -26,8 +26,26 @@ Check Dropbox /luzara ross
         ↓
 New video found?
    ├─ YES → Download → Process → Upload → Mark as published
-   └─ NO  → Exit (nothing to do)
+   └─ NO  → FALLBACK: Select random processed video → Repost → Continue
 ```
+
+## ♻️ Smart Reposting System
+
+**When no new videos are available**, the pipeline automatically:
+
+1. **Selects a processed video** from `Processed_Videos/` folder
+2. **Weighted randomness**: Videos posted fewer times are MORE likely to be chosen
+3. **Generates NEW captions**: AI creates fresh title & description each time
+4. **Posts to all platforms**: Same engagement, new context
+5. **Keeps video in place**: Available for future reposts
+
+**Example selection weights:**
+- Never posted → Weight: 1000 (most likely)
+- Posted 1 time → Weight: 100
+- Posted 2 times → Weight: 10
+- Posted 3+ times → Weight: 1-3 (least likely)
+
+This ensures **continuous posting forever** without running out of content!
 
 ## 📋 Prerequisites
 

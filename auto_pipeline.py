@@ -3,9 +3,13 @@ Main Automation Pipeline for GitHub Actions
 1. Fetch ONE video from Dropbox
 2. Process (upscale + remove watermark)
 3. Upload to social media platforms
+
+IF NO NEW VIDEOS: Repost already processed videos (with randomness & frequency tracking)
 """
 import os
 import sys
+import random
+import json
 from pathlib import Path
 from dotenv import load_dotenv
 
@@ -15,14 +19,73 @@ if sys.platform == 'win32':
 
 load_dotenv()
 
+PROCESSED_DIR = "Processed_Videos"
+PUBLISHED_LOG = "published_videos.json"
+
+
+def get_published_history():
+    """Get full publishing history with repost counts."""
+    if os.path.exists(PUBLISHED_LOG):
+        with open(PUBLISHED_LOG, 'r', encoding='utf-8') as f:
+            try:
+                return json.load(f)
+            except json.JSONDecodeError:
+                return []
+    return []
+
+
+def get_repost_counts():
+    """Count how many times each video has been posted."""
+    history = get_published_history()
+    counts = {}
+    for entry in history:
+        video_name = entry.get('video_name', '')
+        counts[video_name] = counts.get(video_name, 0) + 1
+    return counts
+
+
+def select_random_processed_video():
+    """
+    Select a random processed video, prioritizing less-posted ones.
+    Returns path to selected video or None if no videos available.
+    """
+    if not os.path.exists(PROCESSED_DIR):
+        print(f"  ⚠️  Processed_Videos folder not found")
+        return None
+
+    all_videos = [f for f in os.listdir(PROCESSED_DIR) if f.endswith('.mp4')]
+    
+    if not all_videos:
+        print(f"  ⚠️  No processed videos found in {PROCESSED_DIR}")
+        return None
+
+    repost_counts = get_repost_counts()
+    
+    # Calculate weights: videos with fewer posts get higher weight
+    weights = []
+    for vid in all_videos:
+        count = repost_counts.get(vid, 0)
+        # Weight decreases exponentially with repost count
+        # 0 posts = weight 1000, 1 post = weight 100, 2 posts = weight 10, etc.
+        weight = max(1, 1000 // (3 ** count))
+        weights.append(weight)
+    
+    # Random selection weighted by post count (less posted = more likely)
+    selected = random.choices(all_videos, weights=weights, k=1)[0]
+    selected_path = os.path.join(PROCESSED_DIR, selected)
+    
+    post_count = repost_counts.get(selected, 0)
+    print(f"  🎲 Selected (posted {post_count} time(s) before): {selected}")
+    
+    return selected_path
+
 
 def run_pipeline():
     """
     Complete automation pipeline:
     Dropbox → Process → Upload to Social Media
-
-    Only processes ONE new video per run.
-    If no new videos, exits gracefully.
+    
+    FALLBACK: If no new videos, repost old processed videos (random, frequency-aware)
     """
     print("\n" + "=" * 60)
     print("🚀 STARTING AUTOMATION PIPELINE")
@@ -35,23 +98,33 @@ def run_pipeline():
     downloaded = fetch_one_video_from_dropbox()
 
     if not downloaded:
-        print("\n✅ No new videos to process. Pipeline complete.")
-        print("   (This is normal if all videos have been processed)")
-        return
+        print("\n⚠️  No new videos in Dropbox")
+        print("🔄 FALLBACK MODE: Looking for processed videos to repost...\n")
+        
+        # Fallback: Select random processed video for reposting
+        video_to_post = select_random_processed_video()
+        
+        if not video_to_post:
+            print("\n✅ No videos to post (neither new nor processed). Pipeline complete.")
+            print("   💡 Add videos to Dropbox or Processed_Videos folder")
+            return
+        
+        print(f"\n✅ Fallback: Using processed video for repost\n")
+        processed_video = video_to_post
+    else:
+        print(f"\n✅ Step 1 complete: Video downloaded\n")
 
-    print(f"\n✅ Step 1 complete: Video downloaded\n")
+        # Step 2: Process video (upscale + watermark removal)
+        print("🎬 STEP 2: Processing video (upscaling + watermark removal)...")
+        from process_videos import process_single_video
 
-    # Step 2: Process video (upscale + watermark removal)
-    print("🎬 STEP 2: Processing video (upscaling + watermark removal)...")
-    from process_videos import process_single_video
+        processed_video = process_single_video(downloaded)
 
-    processed_video = process_single_video(downloaded)
+        if not processed_video or not os.path.exists(processed_video):
+            print("\n❌ Video processing failed!")
+            sys.exit(1)
 
-    if not processed_video or not os.path.exists(processed_video):
-        print("\n❌ Video processing failed!")
-        sys.exit(1)
-
-    print("\n✅ Step 2 complete: Video processed\n")
+        print("\n✅ Step 2 complete: Video processed\n")
 
     # Step 3: Upload to social media
     print("📤 STEP 3: Uploading to social media platforms...")

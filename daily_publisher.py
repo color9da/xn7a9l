@@ -8,7 +8,9 @@ from dotenv import load_dotenv
 from pathlib import Path
 
 # Load environment variables
-load_dotenv()
+from pathlib import Path
+env_path = Path(__file__).parent / '.env'
+load_dotenv(dotenv_path=env_path, override=True)
 
 # Import upload functions
 try:
@@ -56,10 +58,11 @@ def select_video(specific_video=None):
             # It's just a filename, join with PROCESSED_DIR
             vid_path = os.path.join(PROCESSED_DIR, specific_video)
             name = specific_video
-            
+
         if os.path.exists(vid_path):
+            # For reposts, we allow already published videos
             if name in published:
-                print(f"⚠️ Video {name} was flagged as already published, but proceeding anyway as explicitly requested.")
+                print(f"ℹ️ Reposting video: {name}")
             return vid_path, name
         else:
             print(f"❌ Error: Specific video {name} not found")
@@ -193,7 +196,7 @@ def main():
     except Exception as e:
         print(f"❌ YouTube upload failed: {e}")
         
-    # Record as published regardless of partial success, 
+    # Record as published regardless of partial success,
     # to avoid repeating the same video. Alternatively, only record if fully successful.
     print("\n✅ Marking video as published.")
     mark_as_published(video_name, {
@@ -201,19 +204,28 @@ def main():
         "description": description,
         "success_flags": success_flags
     })
-    
+
     # Move the published video to Published_Videos folder
+    # ONLY if it's a NEW video (not a repost from Processed_Videos)
     published_dir = "Published_Videos"
     if not os.path.exists(published_dir):
         os.makedirs(published_dir)
-        
-    try:
-        dest_path = os.path.join(published_dir, video_name)
-        shutil.move(video_path, dest_path)
-        print(f"📦 Moved published video to {dest_path}")
-    except Exception as e:
-        print(f"❌ Failed to move published video: {e}")
+
+    # Check if this is a repost (video is already in Processed_Videos)
+    # If reposting, DON'T move the file - keep it in Processed_Videos for future reposts
+    video_in_processed = os.path.join(PROCESSED_DIR, video_name)
+    is_repost = os.path.exists(video_in_processed) and os.path.samefile(video_path, video_in_processed)
     
+    if is_repost:
+        print(f"♻️ Repost: Keeping video in Processed_Videos (available for future reposts)")
+    else:
+        try:
+            dest_path = os.path.join(published_dir, video_name)
+            shutil.move(video_path, dest_path)
+            print(f"📦 Moved published video to {dest_path}")
+        except Exception as e:
+            print(f"❌ Failed to move published video: {e}")
+
     print("🎉 DAILY AUTOMATION COMPLETE")
 
 if __name__ == "__main__":
