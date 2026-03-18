@@ -693,5 +693,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-e62c3da8-bb1e-44c1-bbcf-179580a1b796.mp4",
+        "metadata": {
+            "title": "I walked away and the carpet took notes",
+            "description": "I saunter away like a CEO of chic, look back like I\u2019m approving the stock market of style, and leave the room with a mic-drop heel click. Which exit am I serving \u2014 icy smize, sultry over-the-shoulder, or full-blown boss walk? Vote below, double-tap if I slayed, and follow for more runway indictments. #vibes #catwalkmodel #model #walking #luzaravoss #highfashion #boss #runway #glam #style",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": true,
+                "youtube": false
+            }
+        }
     }
 ]
