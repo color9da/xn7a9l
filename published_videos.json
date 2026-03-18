@@ -708,5 +708,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-cd10b99b-2298-41ec-ba01-12331023eeb8 (2).mp4",
+        "metadata": {
+            "title": "I Walked Away (And Yes, I Took Your Heart on My Heel)",
+            "description": "I glide off like a sunset in perfect lighting and, of course, I look back \u2014 because drama and romance never miss a beat. If my glance made you rewind, follow for more tiny rom-com moments and runway mischief. Drop an emoji: \u2764\ufe0f if you swooned, \ud83d\ude2e if you paused, or \ud83c\udfb5 with your soundtrack pick (rom-com / epic / mystery). Tell me where I should stroll next \u2014 paris, the moon, or somewhere delightfully chaotic? #vibes #catwalkmodel #model #walking #dreamy #romance #lookback #luzaravoss #runway #slowmo",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": true,
+                "youtube": false
+            }
+        }
     }
 ]
