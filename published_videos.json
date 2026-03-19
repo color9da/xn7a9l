@@ -753,5 +753,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-d0909696-f539-4248-9439-f2159ab26e55 (4).mp4",
+        "metadata": {
+            "title": "I Walked Away Like It Was a Movie \u2014 Then I Turned (Yep, That was On Purpose)",
+            "description": "I\u2019m Luzara Voss \u2014 beautiful model, part-time sidewalk hypnotist. I strut away slow, then look back to steal your attention (and your double-tap). Rate my over-the-shoulder smize 1\u201310, drop an emoji that matches the vibe, and follow for more cheeky catwalks. Which caption would you pick: \u2018bye, applause\u2019 or \u2018sequel when?\u2019 Vote below and make me work for that follow \ud83d\ude09 #vibes #catwalkmodel #model #walking #lookback #smize #luzaravoss",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": true,
+                "youtube": false
+            }
+        }
     }
 ]
