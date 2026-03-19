@@ -723,5 +723,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-3e1521da-8e3e-45b6-aed7-f3daf2c177ef (1).mp4",
+        "metadata": {
+            "title": "I Walked Away \u2014 You Turned, Didn't You?",
+            "description": "I'm Luzara Voss, walking away in slow motion like a rom\u2011com extra \u2014 then I look back to make sure you noticed. If you turned with me, double-tap; if you didn\u2019t, rewind and try again \ud83d\ude09 Follow for more soft-focus stunts and late\u2011night runway vibes. Tell me: would you follow me into a sunset or into a cafe? Tag a friend who'd pick either. #vibes #catwalkmodel #model #walking #luzaravoss #dreamy #romance #lookback #followme",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": true,
+                "youtube": false
+            }
+        }
     }
 ]
