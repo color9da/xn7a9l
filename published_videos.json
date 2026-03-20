@@ -783,5 +783,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-3e1521da-8e3e-45b6-aed7-f3daf2c177ef (2).mp4",
+        "metadata": {
+            "title": "i walked away... and left my heart (and my best strut)",
+            "description": "I stroll away like I'm late for a date with the sunset \u2014 then I look back and flirt with the camera. Is it me, the view, or the dramatic hair flip stealing your attention? Tell me: heart stolen or just curious? \u2764\ufe0f Double-tap if you felt it, drop an emoji to vote (\ud83c\udf05 dreamy / \ud83d\udc83 fierce), and follow for more tiny exits and big feelings. #vibes #catwalkmodel #model #walking #dreamy #romance #lookback #luzaravoss #fashion #followme",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": true,
+                "youtube": false
+            }
+        }
     }
 ]
