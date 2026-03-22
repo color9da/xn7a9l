@@ -77,10 +77,14 @@ def download_video(dbx, entry, local_path):
         return False
 
 
-def fetch_one_video_from_dropbox():
+def fetch_one_video_from_dropbox(allow_repost=False):
     """
-    Fetch ONE NEW video from Dropbox for processing.
-    Checks published_videos.json to skip already processed videos.
+    Fetch ONE video from Dropbox for processing.
+    
+    Args:
+        allow_repost: If True and no new videos exist, select a random 
+                      already-published video for reposting.
+                      If False, only fetch new videos.
 
     Returns:
         Path to downloaded video or None
@@ -118,7 +122,7 @@ def fetch_one_video_from_dropbox():
     # Find first video NOT in published list
     for entry in videos:
         video_name = entry.name
-        
+
         # Check if already published
         if video_name in published:
             print(f"Skipping {video_name} - already published")
@@ -130,8 +134,28 @@ def fetch_one_video_from_dropbox():
             print(f"\n✅ Selected: {video_name}")
             return local_path
 
-    print("\n✅ All videos have already been published.")
-    return None
+    # No new videos found
+    if allow_repost and published:
+        print("\n🔄 REPOST MODE: No new videos. Selecting random published video...")
+        import random
+        # Pick random published video name
+        video_to_repost = random.choice(published)
+        print(f"  🎲 Selected for repost: {video_to_repost}")
+        
+        # Find this video in Dropbox and download it
+        for entry in videos:
+            if entry.name == video_to_repost:
+                local_path = os.path.join(LOCAL_INPUT_DIR, video_to_repost)
+                if download_video(dbx, entry, local_path):
+                    print(f"\n✅ Selected for repost: {video_to_repost}")
+                    return local_path
+        
+        # Video not found in Dropbox (might have been deleted)
+        print(f"  ⚠️  {video_to_repost} not found in Dropbox")
+        return None
+    else:
+        print("\n✅ All videos have already been published.")
+        return None
 
 
 if __name__ == "__main__":

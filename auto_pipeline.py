@@ -84,8 +84,8 @@ def run_pipeline():
     """
     Complete automation pipeline:
     Dropbox → Process → Upload to Social Media
-    
-    FALLBACK: If no new videos, repost old processed videos (random, frequency-aware)
+
+    FALLBACK: If no new videos, repost old videos from Dropbox (random selection)
     """
     print("\n" + "=" * 60)
     print("🚀 STARTING AUTOMATION PIPELINE")
@@ -95,36 +95,36 @@ def run_pipeline():
     print("📥 STEP 1: Fetching video from Dropbox...")
     from dropbox_fetch import fetch_one_video_from_dropbox
 
-    downloaded = fetch_one_video_from_dropbox()
+    # First try: fetch new video
+    downloaded = fetch_one_video_from_dropbox(allow_repost=False)
 
     if not downloaded:
         print("\n⚠️  No new videos in Dropbox")
-        print("🔄 FALLBACK MODE: Looking for processed videos to repost...\n")
-        
-        # Fallback: Select random processed video for reposting
-        video_to_post = select_random_processed_video()
-        
-        if not video_to_post:
-            print("\n✅ No videos to post (neither new nor processed). Pipeline complete.")
-            print("   💡 Add videos to Dropbox or Processed_Videos folder")
+        print("🔄 REPOST MODE: Fetching random published video for repost...\n")
+
+        # Fallback: fetch random already-published video from Dropbox
+        downloaded = fetch_one_video_from_dropbox(allow_repost=True)
+
+        if not downloaded:
+            print("\n✅ No videos to post (Dropbox is empty). Pipeline complete.")
+            print("   💡 Add new videos to Dropbox")
             return
-        
-        print(f"\n✅ Fallback: Using processed video for repost\n")
-        processed_video = video_to_post
-    else:
-        print(f"\n✅ Step 1 complete: Video downloaded\n")
 
-        # Step 2: Process video (upscale + watermark removal)
-        print("🎬 STEP 2: Processing video (upscaling + watermark removal)...")
-        from process_videos import process_single_video
+        print(f"\n✅ Repost Mode: Using existing video\n")
 
-        processed_video = process_single_video(downloaded)
+    print(f"\n✅ Step 1 complete: Video downloaded\n")
 
-        if not processed_video or not os.path.exists(processed_video):
-            print("\n❌ Video processing failed!")
-            sys.exit(1)
+    # Step 2: Process video (upscale + watermark removal)
+    print("🎬 STEP 2: Processing video (upscaling + watermark removal)...")
+    from process_videos import process_single_video
 
-        print("\n✅ Step 2 complete: Video processed\n")
+    processed_video = process_single_video(downloaded)
+
+    if not processed_video or not os.path.exists(processed_video):
+        print("\n❌ Video processing failed!")
+        sys.exit(1)
+
+    print("\n✅ Step 2 complete: Video processed\n")
 
     # Step 3: Upload to social media
     print("📤 STEP 3: Uploading to social media platforms...")
