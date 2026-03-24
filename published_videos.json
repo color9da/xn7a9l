@@ -963,5 +963,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-07b6cb09-d654-4014-b94c-8192a4e38283 (2).mp4",
+        "metadata": {
+            "title": "i walk away like it\u2019s a plot twist (you just looked back)",
+            "description": "i\u2019m luzara voss \u2014 i walk away, i look back, and that\u2019s the exact moment your replay button clicked. did you turn to watch me or to take notes? rate my look 1-10, tag a friend who needs this energy, and follow for more dramatic exits. double tap if you hit replay. #vibes #catwalkmodel #model #walking #sassy #lookback #maincharacter",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": true,
+                "youtube": false
+            }
+        }
     }
 ]
