@@ -978,5 +978,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-b6bc9995-827b-436b-af36-a858cc3cd706.mp4",
+        "metadata": {
+            "title": "I Walked Away and Started a Fan Club \u2014 I'm Luzara Voss",
+            "description": "I'm Luzara Voss. I walked away, looked back, and somehow broke the internet (or at least your heart). Did you do a double-take? Drop your reaction emoji below, caption this moment, or rate my strut 1-10 \u2014 best comment gets a follow. Tell me which song I should slay next and don\u2019t forget to hit follow for more look-backs and runway exits. #vibes #catwalkmodel #model #walking #luzaravoss #lookback #sassy #runway #glam",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": true,
+                "youtube": false
+            }
+        }
     }
 ]
