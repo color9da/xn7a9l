@@ -1038,5 +1038,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-fd947503-f0df-47d7-b9f7-e48f0b2d403a.mp4",
+        "metadata": {
+            "title": "i walked away like the runway owed me rent",
+            "description": "i saunter away and give one look that says: your camera can keep the memory, i keep the empire. high-fashion, zero apologies \u2014 boss energy in every step. want more runway receipts? follow me, tell me which city i should collect my next 'rent' in, and tag a friend who\u2019d pay the fee. i read every comment (and i might just pick your suggestion). #vibes #catwalkmodel #model #walking #fashion #boss #glam",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": true,
+                "youtube": false
+            }
+        }
     }
 ]
