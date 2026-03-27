@@ -1083,5 +1083,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-fd947503-f0df-47d7-b9f7-e48f0b2d403a (1).mp4",
+        "metadata": {
+            "title": "I Walked Off Like It Was My Encore \u2014 You're Welcome",
+            "description": "I sashayed away like the main character, then turned back to collect every last heart. If I made you hit rewind, follow me \u2014 your attention-management coach has arrived. Rate my look-back energy 1\u201310, drop an emoji for the next vibe, and tag a friend who needs this confidence boost. See you at the next dramatic exit. #vibes #catwalkmodel #model #walking #lookback #sassy #maincharacter",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": true,
+                "youtube": false
+            }
+        }
     }
 ]
