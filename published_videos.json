@@ -1188,5 +1188,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-5b21c782-d0e0-4867-b26a-95d82c5e12e4.mp4",
+        "metadata": {
+            "title": "if looks could talk, mine would say 'follow me'",
+            "description": "i\u2019m luzara voss \u2014 walking away like it\u2019s a movie and looking back like i wrote the plot twist. did i just steal your attention or your phone? drop an emoji to rate this look: \ud83d\udd25 = fire, \ud83d\ude02 = dramatic, \ud83d\udc96 = follow-worthy. follow for more cheeky catwalk mischief and leave your best caption \u2014 i might steal it (and tag you). #vibes #catwalkmodel #model #walking #followme #lookback #cheeky",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": true,
+                "youtube": false
+            }
+        }
     }
 ]
