@@ -1158,5 +1158,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-fd947503-f0df-47d7-b9f7-e48f0b2d403a (2).mp4",
+        "metadata": {
+            "title": "I Walked Away \u2014 You Looked Back. Follow Me If You Turned!",
+            "description": "I sashayed away, pulled the classic look-back, and yes \u2014 I saw you turn. If you replayed it, drop a 'turned' below, screenshot your favorite frame, and follow for more glam mischief. Caption this moment: 'villain energy' or 'rom-com rewind'? Best caption gets a follow-back. #vibes #catwalkmodel #model #walking #lookback #strut #followme",
+            "success_flags": {
+                "instagram_reel": false,
+                "instagram_story": false,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
