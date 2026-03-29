@@ -1173,5 +1173,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-fd947503-f0df-47d7-b9f7-e48f0b2d403a (3).mp4",
+        "metadata": {
+            "title": "I Walked Away Like a Rom-Com, Looked Back Like a Plot Twist",
+            "description": "I walk away as if the sunset wrote the script, then I look back and the world forgets to breathe. If my hair just stole your attention, double-tap and follow \u2014 I promise more dreamy exits. Tell me where I should walk off to next: paris, a rooftop, or your heart? #vibes #catwalkmodel #model #walking #dreamy #romcom #lookback #followme",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": true,
+                "youtube": false
+            }
+        }
     }
 ]
