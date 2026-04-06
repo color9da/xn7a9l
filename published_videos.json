@@ -1518,5 +1518,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-d27a65ae-a81a-43df-b05f-1b4c7c68cf3f (1).mp4",
+        "metadata": {
+            "title": "I Walked Away So Smoothly the Camera Needed a Replay \u2014 Look Back Served",
+            "description": "I sauntered off like I owned the sunset, then turned for a look that cancels subscriptions and starts trends. If you weren\u2019t ready, that\u2019s on you \u2014 drop one emoji for my energy, caption this look, or tell me which city I should strut next (best idea gets a follow). Follow for more chic exits, dramatic looks, and the occasional runway mic-drop. #vibes #catwalkmodel #model #walking #lookback #sassy #strut #followme",
+            "success_flags": {
+                "instagram_reel": false,
+                "instagram_story": false,
+                "facebook_reel": false,
+                "facebook_story": false,
+                "threads": true,
+                "youtube": false
+            }
+        }
     }
 ]
