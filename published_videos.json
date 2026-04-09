@@ -1638,5 +1638,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-fd947503-f0df-47d7-b9f7-e48f0b2d403a.mp4",
+        "metadata": {
+            "title": "I Walked Away\u2026 and Yes, You\u2019re Still Watching (Don\u2019t Lie)",
+            "description": "Hey, it\u2019s Luzara Voss\u2014watch me sashay away from the camera like I own the sidewalk, then I glance back just to make sure you didn\u2019t lose your mind. \ud83d\ude0c\u2728 Be honest: are you joining me for the next strut or just staring from the comments? Drop a \ud83d\udc85 if you\u2019re team \u201ckeep walking,\u201d and follow for more sassy catwalk energy\u2014because I don\u2019t do quiet exits.\n\n#vibes #catwalkmodel #model #walking",
+            "success_flags": {
+                "instagram_reel": false,
+                "instagram_story": false,
+                "facebook_reel": false,
+                "facebook_story": false,
+                "threads": true,
+                "youtube": false
+            }
+        }
     }
 ]
