@@ -1653,5 +1653,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "957987ac-c5e8-4560-b0f4-4b2f9dd37201.mp4",
+        "metadata": {
+            "title": "I\u2019m Not Ignoring You\u2026 I\u2019m Just Checking If You\u2019re Watching \ud83d\ude0f",
+            "description": "Hey, it\u2019s Luzara Voss\u2014yes, I walk away like I have somewhere important to be\u2026 but then I turn around because I *know* you\u2019re curious. \ud83d\ude09\n\nIf you caught my look, drop a cheeky \u201cHEY\u201d in the comments so I can pretend I\u2019m choosing who gets the next wink. \ud83d\udc83\u2728\n\nFollow if you\u2019re here for main-character energy, fast turns, and catwalk chaos\u2014don\u2019t make me chase you with my best side-eye. \ud83d\ude18",
+            "success_flags": {
+                "instagram_reel": false,
+                "instagram_story": false,
+                "facebook_reel": false,
+                "facebook_story": false,
+                "threads": true,
+                "youtube": false
+            }
+        }
     }
 ]
