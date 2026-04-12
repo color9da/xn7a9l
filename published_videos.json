@@ -1743,5 +1743,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-fd947503-f0df-47d7-b9f7-e48f0b2d403a (3).mp4",
+        "metadata": {
+            "title": "When You Said \u201cJust One More Look\u201d\u2026 \ud83d\udc40 (I\u2019m Not Done Yet)",
+            "description": "Hey besties\u2014it's Luzara Voss, and yes, I\u2019m walking away like I didn\u2019t just steal your attention \ud83d\ude0c\u2728 I turn back for the dramatic \u201cwait for it\u2026\u201d moment\u2014so tell me: did you catch my cheeky look or were you already gone? \ud83d\ude0f Drop a \ud83d\udd25 if you want part 2 and follow so I can embarrass you (politely) with more catwalk energy. #vibes #catwalkmodel #model #walking",
+            "success_flags": {
+                "instagram_reel": false,
+                "instagram_story": false,
+                "facebook_reel": false,
+                "facebook_story": false,
+                "threads": true,
+                "youtube": false
+            }
+        }
     }
 ]
