@@ -135,23 +135,19 @@ def fetch_one_video_from_dropbox(allow_repost=False):
             return local_path
 
     # No new videos found
-    if allow_repost and published:
-        print("\n🔄 REPOST MODE: No new videos. Selecting random published video...")
+    if allow_repost and videos:
+        print("\n🔄 REPOST MODE: No new videos. Selecting random video from Dropbox...")
         import random
-        # Pick random published video name
-        video_to_repost = random.choice(published)
-        print(f"  🎲 Selected for repost: {video_to_repost}")
+        video_entry = random.choice(videos)
+        video_name = video_entry.name
+        print(f"  🎲 Selected for repost: {video_name}")
         
-        # Find this video in Dropbox and download it
-        for entry in videos:
-            if entry.name == video_to_repost:
-                local_path = os.path.join(LOCAL_INPUT_DIR, video_to_repost)
-                if download_video(dbx, entry, local_path):
-                    print(f"\n✅ Selected for repost: {video_to_repost}")
-                    return local_path
+        local_path = os.path.join(LOCAL_INPUT_DIR, video_name)
+        if download_video(dbx, video_entry, local_path):
+            print(f"\n✅ Downloaded for repost: {video_name}")
+            return local_path
         
-        # Video not found in Dropbox (might have been deleted)
-        print(f"  ⚠️  {video_to_repost} not found in Dropbox")
+        print(f"  ⚠️  Failed to download {video_name} from Dropbox")
         return None
     else:
         print("\n✅ All videos have already been published.")
