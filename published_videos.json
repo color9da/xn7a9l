@@ -1908,5 +1908,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-cd10b99b-2298-41ec-ba01-12331023eeb8 (2).mp4",
+        "metadata": {
+            "title": "I\u2019m Not Walking Away\u2014You\u2019re Just Getting Left on Read \ud83d\ude0c\u2728 | Luzara Voss",
+            "description": "I strut like the CEO of runway energy\u2014then I turn back, give you that \u201cyou saw nothing\u201d look, and keep walking anyway. \ud83d\ude0f Would you chase after me\u2026 or let me leave you on purpose? Drop a \ud83d\udd25 if you\u2019re team stay, or a \ud83d\udc40 if you\u2019re team follow! #vibes #catwalkmodel #model #walking #highfashion #bossenergy #runway",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": false,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
