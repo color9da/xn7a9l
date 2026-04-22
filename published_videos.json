@@ -2043,5 +2043,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-d27a65ae-a81a-43df-b05f-1b4c7c68cf3f (2).mp4",
+        "metadata": {
+            "title": "I Walk, I Glance, You Follow \u2014 Let\u2019s Pretend You Didn\u2019t See Me",
+            "description": "I\u2019m Luzara Voss and yes, I know you clocked me the second I turned my head \ud83d\ude0f I\u2019m walking away like I own the runway\u2026 then I look back like, \u201cSo\u2026 are you coming or what?\u201d Drop a \ud83d\udd25 if you\u2019d take the next step (follow me\u2014no pressure, just major main-character energy). #vibes #catwalkmodel #model #walking #sassymodel #lookback #runway",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": true,
+                "youtube": false
+            }
+        }
     }
 ]
