@@ -2058,5 +2058,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "b8e2fdaf-ec2f-47d9-805a-101d6d646e94.mp4",
+        "metadata": {
+            "title": "I Turned Around\u2026 Because You Looked Too \ud83d\udc40\u2728 (Follow If You\u2019re Honking My Confidence)",
+            "description": "Okay, hi\u2014it's Luzara Voss, and yes, I walked away on purpose. I\u2019m giving you that slow, sassy catwalk energy\u2026 then I glance back like, \u201cSo\u2026 are you still watching or are you just pretending?\u201d \ud83d\ude0c\ud83d\udd25 Hit follow if you want more confident struts, main-character looks, and zero apologies. Drop a comment: should I do the next walk for \u201cboss mode\u201d or \u201cchaos chic\u201d? \ud83d\udc85\ud83d\udeb6\u200d\u2640\ufe0f",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": true,
+                "youtube": false
+            }
+        }
     }
 ]
