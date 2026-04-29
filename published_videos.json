@@ -2328,5 +2328,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-3e1521da-8e3e-45b6-aed7-f3daf2c177ef (2).mp4",
+        "metadata": {
+            "title": "I Walked Off\u2026 Then Demanded You Look Back (High-Fashion Boss Mode)",
+            "description": "Hi, I\u2019m Luzara Voss\u2014and yes, I\u2019m that beautiful trouble on the catwalk. I strut away like I own the runway, then I whip around to check if you\u2019re still watching\u2026 \ud83d\udc40\u2728 Be honest: did you gasp or did you hit replay? Drop a \u201c\ud83d\udc51\u201d if I just upgraded your feed, and follow for more high-fashion boss energy, fierce turns, and main-character exits. #vibes #catwalkmodel #model #walking #highfashion #bossmode #runway",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": true,
+                "youtube": false
+            }
+        }
     }
 ]
