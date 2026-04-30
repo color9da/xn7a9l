@@ -2373,5 +2373,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-931084bc-7691-4162-b924-41a60e576cca (3).mp4",
+        "metadata": {
+            "title": "I Walk Away\u2026 Then I Hit You With the Side-Eye \ud83d\ude0c\u2728",
+            "description": "Okay hi\u2014it's me, Luzara Voss. I strut away like I own the sidewalk, then I look back just to remind you who\u2019s in charge. \ud83d\ude0f\n\nBe honest\u2026 are you Team \u201cfull send\u201d or Team \u201cwatch again\u201d? Hit follow so I can catch you in the next look. \ud83d\udc85\ud83d\udc60",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": true,
+                "youtube": false
+            }
+        }
     }
 ]
