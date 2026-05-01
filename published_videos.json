@@ -2418,5 +2418,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-89648ff7-67c9-4c04-8796-b8eddddf5b51.mp4",
+        "metadata": {
+            "title": "I Turned My Back\u2014Then You Looked Back \ud83d\ude0c\u2728",
+            "description": "I\u2019m Luzara Voss and yes\u2026 I walked away on purpose. Then I did the whole \u201clook-back\u201d thing because confidence is a full-time job. \ud83d\ude0f\n\nBe honest\u2014did you catch the attitude or are you just here for the serving? Drop a \ud83d\udd25 if you\u2019d step into my spotlight, and follow for more sassy catwalk moments like this. Let\u2019s see if you can keep up. \ud83d\udc85",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": true,
+                "youtube": false
+            }
+        }
     }
 ]
