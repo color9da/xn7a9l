@@ -2478,5 +2478,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "666a1519-939b-490a-bc99-09f5639e4390.mp4",
+        "metadata": {
+            "title": "I walk away\u2026 then I double-back \ud83d\ude0f\ud83d\udc83 (You know you\u2019re watching)",
+            "description": "Hey bestie\u2014it's Luzara Voss and I\u2019m doing a little catwalk magic: I strut away like I don\u2019t care, then I whip my head back like, \u201cWait\u2014did you just stare? \ud83d\udc40\u201d If you\u2019re team cheeky, tap follow and tell me what you think: was that look a 10/10 or a \u201cma\u2019am please exit the screen\u201d \ud83d\ude18\n\n#vibes #catwalkmodel #model #walking",
+            "success_flags": {
+                "instagram_reel": false,
+                "instagram_story": false,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
