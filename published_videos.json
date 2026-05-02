@@ -2493,5 +2493,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-e62c3da8-bb1e-44c1-bbcf-179580a1b796.mp4",
+        "metadata": {
+            "title": "Boss Walk, Power Glance\u2014Catch Me If You Can \ud83d\ude08\u2728",
+            "description": "I\u2019m Luzara Voss, and yes\u2014I walk like I own the runway and look back like I already know your name. \ud83d\ude0c\ud83d\udc85 Watch me strut away, then hit replay for that extra \u201cwait\u2026 did she just do that?\u201d moment. \n\nBe honest: team #team1\u2014\u201cyes, stare back\u201d or #team2\u2014\u201crespectfully follow from afar\u201d? Drop your pick in the comments, and I\u2019ll see you in the next high-fashion boss drop. \ud83d\udc60\ud83d\udca5\n\n#vibes #catwalkmodel #model #walking #runway #highfashion #bossenergy #fashionmodel #strut #lookback",
+            "success_flags": {
+                "instagram_reel": false,
+                "instagram_story": false,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
