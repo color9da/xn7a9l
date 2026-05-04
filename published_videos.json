@@ -2583,5 +2583,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-01db0c9c-d1ce-4cd1-8eaa-be6bc413cc2b.mp4",
+        "metadata": {
+            "title": "I Turned Around\u2026 and You\u2019re Still Gonna Stare \ud83d\ude0f #noapologies",
+            "description": "Hey besties\u2014it's Luzara Voss. I\u2019m walking away like I own the hallway, then I look back like, \u201cYeah\u2026 that\u2019s what I thought.\u201d \ud83d\ude0c\u2728 Be honest: did you catch yourself staring? Hit follow and tell me in the comments\u2014team walk-forward energy or team dramatic look-back? Let\u2019s get you on my side. #vibes #catwalkmodel #model #walking #modelwalk #sassygirl #backlook #fashion",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
