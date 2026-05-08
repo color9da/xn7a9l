@@ -2733,5 +2733,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-0fadecf2-eb02-43e4-a8c9-513b43565782 (1).mp4",
+        "metadata": {
+            "title": "I Walk Away\u2026 Then Snatch Your Attention (Hi, It\u2019s Luzara)",
+            "description": "I\u2019m Luzara Voss\u2014watch me strut away like I own the sidewalk, then flip it and look back like \u201coops, did you fall in love?\u201d \ud83d\ude0c\u2728 Be honest\u2026 are you team #turnaround or team #stareforward? Drop \u201cLOOK BACK\u201d if you\u2019re obsessed and follow for more sassy catwalk chaos. \ud83d\udc83\ud83d\udd25 #vibes #catwalkmodel #model #walking",
+            "success_flags": {
+                "instagram_reel": false,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
