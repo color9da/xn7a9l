@@ -2763,5 +2763,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-f4cf32ad-1b61-413d-8d97-9edb8891298c (1).mp4",
+        "metadata": {
+            "title": "I\u2019m Not Ignoring You\u2026 I\u2019m Testing Your Eye Contact (\ud83d\ude09)",
+            "description": "Hey, I\u2019m Luzara Voss\u2014watch me strut away like I own the hallway, then I turn back just to see if you noticed \ud83d\ude0f\u2728 Be honest: did you check twice or just scroll once? Drop a \ud83d\udd25 if I should \u201caccidentally\u201d walk past your feed again! Follow for more cheeky catwalk energy and main-character moments.\n\n#vibes #catwalkmodel #model #walking",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
