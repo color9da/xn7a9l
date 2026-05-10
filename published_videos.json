@@ -2838,5 +2838,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-fd947503-f0df-47d7-b9f7-e48f0b2d403a (1).mp4",
+        "metadata": {
+            "title": "I Turned Back\u2026 Now You Have to Watch (Carefully) \ud83d\ude0c\u2728",
+            "description": "I\u2019m Luzara Voss\u2014mysterious, elegant, and just a little dangerous when I glance over my shoulder. In this short, I walk away like I own the night\u2026 then look back like I know your secrets. \ud83d\ude09\n\nBe honest: did you catch my look\u2014or did it catch you? Comment \u201cLURK\u201d if you want more catwalk mysteries, and follow for the next slow-burn reveal. \ud83d\udcab",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
