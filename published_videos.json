@@ -3108,5 +3108,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-9360b3ba-1fa5-4f65-a791-eb5467d44862.mp4",
+        "metadata": {
+            "title": "I turned around\u2026 and now I need your vote \ud83d\udc40\u2728",
+            "description": "Hey bestie\u2014it's me, Luzara Voss \ud83d\ude18 I strut away like I own the sidewalk, then I spin back with that \u201cdid you catch me?\u201d look. Your mission: comment \u201cTEAM LEFT\u201d or \u201cTEAM RIGHT\u201d (where you\u2019d follow me to next) and hit follow if you want more cheeky catwalk energy. Don\u2019t lie\u2026 you\u2019re already smiling. \ud83d\ude0f\n\n#vibes #catwalkmodel #model #walking",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
