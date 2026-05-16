@@ -3093,5 +3093,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-d0460cb8-8237-4c55-923d-2bc71af6710b.mp4",
+        "metadata": {
+            "title": "I Walk Away\u2026 Then I Turn the Spotlight Back On (You\u2019re Welcome)",
+            "description": "Hey bestie \ud83d\ude0f I\u2019m Luzara Voss\u2014watch me strut away like I own the sidewalk\u2026 then I look back because apparently I like making you question your choices. \ud83d\udc85\n\nBe honest: are you team \u201cfollow now\u201d or team \u201cwait, just one more look\u201d? Drop a \ud83d\udd25 in the comments if you want part 2 and I\u2019ll let my sass do the rest.\n\n#vibes #catwalkmodel #model #walking",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
