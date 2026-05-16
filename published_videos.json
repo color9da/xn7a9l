@@ -3123,5 +3123,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-9201af1f-881c-4d97-bd4b-13aacf772c97.mp4",
+        "metadata": {
+            "title": "I turned around\u2026 did you notice? \ud83d\ude09",
+            "description": "Heyyy, it\u2019s Luzara Voss \u2728 I\u2019m strutting away like I own the sidewalk\u2014then I look back to see if you\u2019re still watching. Be honest\u2026 were you? \ud83d\ude0f Drop a \u201cyes\u201d in the comments if you caught my eye (and my walk), and if you didn\u2019t\u2026 pretend you did and follow for more cheeky catwalk energy. \ud83d\udc83\ud83d\udcab #vibes #catwalkmodel #model #walking",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
