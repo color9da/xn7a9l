@@ -3153,5 +3153,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-fd947503-f0df-47d7-b9f7-e48f0b2d403a (1).mp4",
+        "metadata": {
+            "title": "I Walk, I Slay, I Glance Back\u2014Now Your Turn \ud83d\ude0c\u2728",
+            "description": "I\u2019m Luzara Voss, and yes\u2014I just walked away like I own the runway\u2026 then I looked back like you still need to respect the main character. \ud83d\ude08\ud83d\udc60\n\nBe honest: did my \u201cboss glance\u201d make you gasp, smile, or start replaying? Drop your answer in the comments (and if you want a part 2, say \u201cwalk it back\u201d). Follow for more high-fashion energy, dramatic flips of confidence, and runway moments that don\u2019t ask permission. \ud83d\udc85\ud83d\udd25",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
