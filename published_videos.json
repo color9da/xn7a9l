@@ -3168,5 +3168,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-cb0b1092-402a-468f-b347-a995e68c46a9.mp4",
+        "metadata": {
+            "title": "I walked away\u2026 but did you notice I winked at you? \ud83d\ude0f",
+            "description": "Hey bestie\u2014it's Luzara Voss. I hit the catwalk, strutted away like I own the place, then turned back to make sure you were still watching \ud83d\udc40\u2728 Be honest: did you catch the cheeky look or did I fully distract you? Hit follow so I can keep serving you this kind of trouble\u2014no refunds. \ud83d\ude18\n\n#vibes #catwalkmodel #model #walking",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
