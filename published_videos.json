@@ -3183,5 +3183,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-fd947503-f0df-47d7-b9f7-e48f0b2d403a (1).mp4",
+        "metadata": {
+            "title": "I Turned Around\u2026 Now It\u2019s Your Turn \ud83d\ude0f | Luzara Voss",
+            "description": "Hey bestie, it\u2019s me, Luzara Voss\u2014watch me strut away like I own the sidewalk\u2026 then I look back like, \u201cyou still watching?\u201d \ud83d\ude09 Your mission: drop a \ud83d\udd25 if you caught me, and tell me if I should do a part 2 walk-back or a full runway comeback! #vibes #catwalkmodel #model #walking",
+            "success_flags": {
+                "instagram_reel": false,
+                "instagram_story": false,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
