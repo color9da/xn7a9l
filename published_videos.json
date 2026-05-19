@@ -3243,5 +3243,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-e62c3da8-bb1e-44c1-bbcf-179580a1b796.mp4",
+        "metadata": {
+            "title": "I Turned Around and Maybe Stole Your Attention (Sorry) \ud83d\udcab",
+            "description": "Hey, it\u2019s Luzara Voss\u2014just me, a slow catwalk, and a little \u201cdid you just fall in love?\u201d moment. I walk away like I\u2019m unbothered\u2026 then I look back and let the dreamy trouble begin. \ud83d\udc95\n\nBe honest: when I turned around, did you feel that spark\u2014or did it hit you way harder than you planned? Drop a \ud83d\udc98 if you want me to do a part 2 and follow for more romantic, floating-in-the-stars vibes. \u2728\n\n#vibes #catwalkmodel #model #walking",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
