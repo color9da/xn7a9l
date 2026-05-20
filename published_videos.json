@@ -3303,5 +3303,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-3e1521da-8e3e-45b6-aed7-f3daf2c177ef.mp4",
+        "metadata": {
+            "title": "I Walk Away Like I Own the Room (Then I Glance Back) \ud83d\ude0c\u2728",
+            "description": "Okay hi, it\u2019s Luzara Voss\u2014watch me strut past like you didn\u2019t just fall in love with the attitude\u2026 then I look back like, \u201cyou good?\u201d \ud83d\ude0f If you caught that sass, be honest: are you team slow-walk or team main-character energy? Drop a \ud83d\udd25 or a \ud83d\ude0c in the comments so I know who\u2019s really watching. Follow for more catwalk moments that hit different. \ud83d\udc8b #vibes #catwalkmodel #model #walking",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": false,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
