@@ -3393,5 +3393,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-5b21c782-d0e0-4867-b26a-95d82c5e12e4.mp4",
+        "metadata": {
+            "title": "I Walk, You Stare \u2014 Now Follow Me \ud83d\udc60\ud83d\udcbc",
+            "description": "I\u2019m Luzara Voss, and yes\u2014I walked away on purpose. \ud83d\ude0c Watch me strut, then turn back like the main character you didn\u2019t know you needed. Tell me: do you want the slow-motion version, the camera-off attitude, or the \u201cboss walk\u201d tutorial? Drop your answer and I\u2019ll pick the next move\u2014follow for more high-fashion power moments. \ud83d\udc8b\u2728\n\n#vibes #catwalkmodel #model #walking",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
