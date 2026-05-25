@@ -3513,5 +3513,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "7e61d996-8b41-4917-b2dc-d635483be488.mp4",
+        "metadata": {
+            "title": "I Walk, I Slay, I Glance Back Like \u201cYeah\u2026 watch me.\u201d",
+            "description": "Hey besties\u2014it's Luzara Voss and I\u2019m giving you that sassy runway energy: I walk away from the camera, then I TURN BACK like I already know you\u2019re about to follow. \ud83d\ude0f\u2728 Be honest\u2026 did you catch my look? Drop a \u201c\ud83d\udd25\u201d if you\u2019re obsessed, and hit follow before I vanish again. #vibes #catwalkmodel #model #walking #sassy #runway",
+            "success_flags": {
+                "instagram_reel": false,
+                "instagram_story": false,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
