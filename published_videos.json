@@ -3483,5 +3483,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-ed0c6b19-b7ad-490e-b874-06060750827b.mp4",
+        "metadata": {
+            "title": "I Turned Around\u2014Now You\u2019re Obligated to Hit Follow \ud83d\ude0c\u2728",
+            "description": "Hi, it\u2019s Luzara Voss\u2014watch me strut away like I own the runway, then I look back like \u201cyou still there?\u201d \ud83d\ude0f\n\nBe honest: did I make you gasp or did you gasped anyway? Drop a \ud83d\udd25 if you want part 2 (and a reminder to self: your follow button is looking a little\u2026 lonely). Because I don\u2019t walk for free\u2014I walk for followers. \ud83d\udc85\n\n#vibes #catwalkmodel #model #walking #highfashion #bossenergy #fashionmodel #runwaywalk #followme",
+            "success_flags": {
+                "instagram_reel": false,
+                "instagram_story": false,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
