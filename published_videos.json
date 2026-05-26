@@ -3528,5 +3528,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-99d94622-69f5-4f18-bc49-2d42cb4b20c2.mp4",
+        "metadata": {
+            "title": "Okay, I\u2019m not leaving\u2014I'm just looking back \ud83d\udc40\u2728",
+            "description": "Hey, it\u2019s Luzara Voss. I strut away like I own the sidewalk\u2026 then I whip around because you clearly needed a little \u201cdid she just do that?\u201d moment. \ud83d\ude0c\ud83d\udc81\u200d\u2640\ufe0f\n\nBe honest: when I look back, do you (1) rewind immediately or (2) pretend you\u2019re totally not impressed? Drop your answer in the comments and I\u2019ll pick someone to hype in my next post. Follow for more cheeky catwalk energy\u2014no skipping this runway. \ud83d\ude09\ud83d\udd25\n\n#vibes #catwalkmodel #model #walking",
+            "success_flags": {
+                "instagram_reel": false,
+                "instagram_story": false,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
