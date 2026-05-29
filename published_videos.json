@@ -3678,5 +3678,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-10e46bd7-219c-45d8-ab4b-9566fe9925b7.mp4",
+        "metadata": {
+            "title": "I Walk Away Like You\u2019re Late\u2014Now Look Again \ud83d\ude0c\u2728",
+            "description": "Hey, it\u2019s Luzara Voss. Watch me strut away like I run the hallway\u2026 then I turn around and hit you with that \u201cyou good?\u201d look. Be honest\u2014did I catch your attention\u2026 or did you miss it the first time? \ud83d\ude0f\n\nHit follow if you want more main-character energy, sass, and catwalk moments. Drop a \ud83d\udd25 if you\u2019d let me \u201cwalk away\u201d on you, or a \ud83d\ude2d if you\u2019re already rehearsing my comeback in your head.\n\n#vibes #catwalkmodel #model #walking",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": false,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
