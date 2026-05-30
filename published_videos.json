@@ -3723,5 +3723,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-fd947503-f0df-47d7-b9f7-e48f0b2d403a.mp4",
+        "metadata": {
+            "title": "I turned around\u2014now follow me before I disappear \ud83d\udc85",
+            "description": "Hey, it\u2019s Luzara Voss \ud83d\udc8b I walked away like I own the street\u2026 then hit you with the perfect look-back. If you\u2019re the \u201cI need a second chance\u201d type, tell me: should I do another strut, or go full main-character mode next? Drop a \ud83d\udc83 in the comments and follow\u2014I post sass on schedule. You know you want it \ud83d\ude0c\u2728\n\n#vibes #catwalkmodel #model #walking #modelwalk #strut",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
