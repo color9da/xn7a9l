@@ -3813,5 +3813,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-0fadecf2-eb02-43e4-a8c9-513b43565782.mp4",
+        "metadata": {
+            "title": "I Walk. I Slay. I Look Back Like It\u2019s Your Problem \ud83d\ude0c\u2728",
+            "description": "Hey bestie\u2014yes, it\u2019s me, Luzara Voss. I\u2019m walking away like I own the whole runway\u2026 then I turn back to see if you\u2019re still watching \ud83d\ude0f If you blinked, don\u2019t worry\u2014I\u2019ll do it again. Comment \u201ci got you\u201d and hit follow if you\u2019re ready for more sassy catwalk energy. Let\u2019s make the algorithm obsessed with us. \ud83d\udc85\ud83d\udc60 #vibes #catwalkmodel #model #walking",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
