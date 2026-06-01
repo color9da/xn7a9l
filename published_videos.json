@@ -3783,5 +3783,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-3e1521da-8e3e-45b6-aed7-f3daf2c177ef.mp4",
+        "metadata": {
+            "title": "I Turned Around and Killed the Catwalk (Follow If You Felt That)",
+            "description": "I\u2019m Luzara Voss\u2014yes, I walked away like I own the runway\u2026 then I turned my head and let you \u201caccidentally\u201d fall for it. \ud83d\ude0c\u2728 If you felt that high-fashion boss energy in your soul, hit follow\u2014because I\u2019m doing round two and you\u2019re coming with me. Drop a \ud83d\udc60 if you want the next look, or a \ud83d\ude08 if you want the villain edition. #vibes #catwalkmodel #model #walking",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
