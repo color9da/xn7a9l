@@ -3858,5 +3858,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-d0909696-f539-4248-9439-f2159ab26e55.mp4",
+        "metadata": {
+            "title": "I Walked Away\u2026 Now You\u2019re Still Watching (Don\u2019t Act Shy) \ud83d\ude0f",
+            "description": "Hey bestie, it\u2019s Luzara Voss\u2014yes, I *walked away*\u2026 and yes, I looked back on purpose. \ud83d\ude09 If you caught that glance, I need you to prove it: comment \u201ci\u2019m obsessed\u201d and hit follow so I can sass-walk into your feed again. Confident? Always. Subtle? Never. Let\u2019s see how many of you are brave enough to admit you\u2019re still watching \ud83d\udc40\n\n#vibes #catwalkmodel #model #walking",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
