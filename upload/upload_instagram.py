@@ -1,6 +1,7 @@
 """
-Instagram Reels Upload - Using tmpfiles.org for Public URL
-Uploads video to tmpfiles.org, then uses URL for Instagram API
+Instagram Reels Upload - Using Catbox.moe for Public URL
+Uploads video to Catbox.moe (primary), falls back to tmpfiles.org
+Catbox.moe is more reliable with Meta servers (Fastly CDN, no expiry)
 """
 
 import os
@@ -9,10 +10,32 @@ import time
 from pathlib import Path
 from dotenv import load_dotenv
 
-# Load environment variables
 from pathlib import Path
 env_path = Path(__file__).parent.parent / '.env'
 load_dotenv(dotenv_path=env_path, override=True)
+
+
+def upload_to_catbox(file_path):
+    url = 'https://catbox.moe/user/api.php'
+    with open(file_path, 'rb') as f:
+        resp = requests.post(url, data={'reqtype': 'fileupload'}, files={'fileToUpload': f}, timeout=180)
+    if resp.status_code == 200:
+        return resp.text.strip()
+    return None
+
+
+def upload_to_tmpfiles(file_path):
+    url = 'https://tmpfiles.org/api/v1/upload'
+    with open(file_path, 'rb') as f:
+        files = {'file': ('video.mp4', f, 'video/mp4')}
+        resp = requests.post(url, files=files, timeout=180)
+    if resp.status_code == 200:
+        data = resp.json()
+        if data.get('status') == 'success':
+            temp_url = data.get('data', {}).get('url', '')
+            if temp_url:
+                return temp_url.replace('tmpfiles.org/', 'tmpfiles.org/dl/')
+    return None
 
 def upload_to_instagram(video_path, caption, is_story=False):
     """
@@ -78,34 +101,24 @@ def upload_to_instagram(video_path, caption, is_story=False):
     print(f"[instagram] Caption length: {len(caption_limited)} characters")
     
     try:
-        # Step 1: Upload to tmpfiles.org to get public URL
+        # Step 1: Upload to temporary public hosting
         print(f"[instagram] 📤 Step 1: Uploading to temporary hosting...")
-        
-        with open(video_path_obj, 'rb') as video_file:
-            files = {'file': ('video.mp4', video_file, 'video/mp4')}
-            temp_response = requests.post(
-                'https://tmpfiles.org/api/v1/upload',
-                files=files,
-                timeout=180
-            )
-        
-        if temp_response.status_code != 200:
-            error_msg = f"Failed to upload to temporary hosting: {temp_response.status_code}"
-            print(f"[instagram] ❌ {error_msg}")
-            print(f"[instagram] Response: {temp_response.text[:200]}")
-            raise Exception(error_msg)
-        
-        temp_data = temp_response.json()
-        if temp_data.get('status') != 'success':
-            error_msg = f"Temporary hosting failed: {temp_data}"
-            print(f"[instagram] ❌ {error_msg}")
-            raise Exception(error_msg)
-        
-        # tmpfiles.org returns URL in format: https://tmpfiles.org/12345
-        # We need direct download link: https://tmpfiles.org/dl/12345
-        temp_url = temp_data.get('data', {}).get('url', '')
-        video_url = temp_url.replace('tmpfiles.org/', 'tmpfiles.org/dl/')
-        
+        video_url = None
+
+        print("[instagram] Uploading to Catbox.moe...")
+        video_url = upload_to_catbox(video_path_obj)
+        if video_url:
+            print(f"[instagram] ✅ Uploaded to Catbox.moe: {video_url}")
+
+        if not video_url:
+            print("[instagram] ⚠️ Catbox.moe failed, trying tmpfiles.org fallback...")
+            video_url = upload_to_tmpfiles(video_path_obj)
+            if video_url:
+                print(f"[instagram] ✅ Uploaded to tmpfiles.org: {video_url}")
+
+        if not video_url:
+            raise Exception("All hosting services failed (Catbox.moe and tmpfiles.org)")
+
         print(f"[instagram] ✅ Temporary URL created: {video_url}")
         
         if not user_id or user_id == 'None' or user_id == '***':
@@ -149,13 +162,13 @@ def upload_to_instagram(video_path, caption, is_story=False):
         container_id = container_response.json().get('id')
         print(f"[instagram] ✅ Container created: {container_id}")
         
-        # Step 3: Wait for processing
+        # Step 3: Wait for processing with progressive backoff
         print(f"[instagram] ⏳ Step 3: Waiting for video processing...")
-        max_wait = 180 # Increased wait time
+        max_wait = 300
         waited = 0
+        interval = 5
 
         while waited < max_wait:
-            # Check status on graph.facebook.com (primary endpoint)
             status_url = f"https://graph.facebook.com/v21.0/{container_id}"
             status_params = {
                 'fields': 'status_code',
@@ -164,7 +177,6 @@ def upload_to_instagram(video_path, caption, is_story=False):
 
             status_response = requests.get(status_url, params=status_params, timeout=30)
 
-            # Fallback if status check fails on facebook.com
             if status_response.status_code != 200:
                 status_url = f"https://graph.instagram.com/v21.0/{container_id}"
                 status_response = requests.get(status_url, params=status_params, timeout=30)
@@ -182,11 +194,13 @@ def upload_to_instagram(video_path, caption, is_story=False):
                 print(f"[instagram] ❌ {error_msg}")
                 raise Exception(error_msg)
 
-            time.sleep(10)
-            waited += 10
+            time.sleep(interval)
+            waited += interval
+            if interval < 30:
+                interval = min(interval + 5, 30)
 
         if waited >= max_wait:
-            error_msg = "Video processing timed out"
+            error_msg = "Video processing timed out after 5 minutes"
             print(f"[instagram] ❌ {error_msg}")
             raise Exception(error_msg)
         
