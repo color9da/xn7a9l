@@ -4,6 +4,7 @@ import glob
 import requests
 import shutil
 import sys
+import time
 from dotenv import load_dotenv
 from pathlib import Path
 
@@ -160,6 +161,7 @@ def main():
         success_flags["instagram_reel"] = True
     except Exception as e:
         print(f"❌ Instagram Reel upload failed: {e}")
+    time.sleep(5)
         
     # Instagram Stories
     try:
@@ -167,6 +169,7 @@ def main():
         success_flags["instagram_story"] = True
     except Exception as e:
         print(f"❌ Instagram Story upload failed: {e}")
+    time.sleep(5)
         
     # Facebook Reels
     try:
@@ -174,6 +177,7 @@ def main():
         success_flags["facebook_reel"] = True
     except Exception as e:
         print(f"❌ Facebook Reel upload failed: {e}")
+    time.sleep(5)
         
     # Facebook Stories
     try:
@@ -181,6 +185,7 @@ def main():
         success_flags["facebook_story"] = True
     except Exception as e:
         print(f"❌ Facebook Story upload failed: {e}")
+    time.sleep(5)
         
     # Threads
     try:
@@ -188,6 +193,7 @@ def main():
         success_flags["threads"] = True
     except Exception as e:
         print(f"❌ Threads upload failed: {e}")
+    time.sleep(5)
         
     # YouTube Shorts
     try:
