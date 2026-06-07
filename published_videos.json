@@ -4083,5 +4083,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-d27a65ae-a81a-43df-b05f-1b4c7c68cf3f (1).mp4",
+        "metadata": {
+            "title": "I Walk Away\u2026 Then I Give You Side-Eye (Don\u2019t Pretend You Didn\u2019t See It)",
+            "description": "Hey bestie \ud83d\ude0c I\u2019m Luzara Voss\u2014watch me strut away from the camera like I own the runway\u2026 then turn back with that \u201cyou following yet?\u201d energy. If you\u2019re still watching, congratulations: you\u2019re officially in my spotlight era. \ud83d\udc40\u2728\n\nBe honest\u2014do I deserve a follow for this level of sass? Comment \u201cfollow me\u201d and I\u2019ll know you\u2019re down for more fierce walks and main-character looks. \ud83d\udc85\n\n#vibes #catwalkmodel #model #walking",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
