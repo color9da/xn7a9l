@@ -4143,5 +4143,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-dbe2cfe2-518b-4ec6-8d81-51457ddbd3df.mp4",
+        "metadata": {
+            "title": "I Turned Around\u2014Now You\u2019re Following (Don\u2019t Act Surprised)",
+            "description": "I\u2019m Luzara Voss, and yes\u2014I walk away\u2026 then I look back like you\u2019re the one who needs to catch up. \ud83d\ude0c\u2728 High-fashion energy, boss attitude, and main-character confidence from every step. Tell me: should I do the next spin or the next runway strut? Drop your vote and follow\u2014because this catwalk isn\u2019t done with you yet. \ud83d\udc8b\ud83d\udc60\n\n#vibes #catwalkmodel #model #walking",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
