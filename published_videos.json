@@ -4203,5 +4203,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-d0460cb8-8237-4c55-923d-2bc71af6710b.mp4",
+        "metadata": {
+            "title": "I Walked Away\u2026 Then Looked Back Like, \u201cYou Still Watching? \ud83d\udc40\u201d",
+            "description": "Hey bestie\u2014it's me, luzara voss, strutting away with main-character energy and then whipping back a look like: \u201cso\u2026 are you impressed or are you impressed?\u201d \ud83d\ude0f\u2728 i need to know\u2014what do you rate my walk from 1 to \u201cstop scrolling\u201d? Drop your number, hit follow for more cheeky catwalk moments, and don\u2019t act like you didn\u2019t rewind. \ud83d\udc83\ud83d\udd25 #vibes #catwalkmodel #model #walking",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": false,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
