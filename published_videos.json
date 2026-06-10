@@ -4233,5 +4233,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-5b21c782-d0e0-4867-b26a-95d82c5e12e4.mp4",
+        "metadata": {
+            "title": "I Walk Away\u2026 Then I Hit You With the Look \ud83d\ude0f\u2728 (Boss Mode On)",
+            "description": "I\u2019m Luzara Voss, and yes\u2014I\u2019m serving high-fashion boss energy as I strut away\u2026 then I look back like, \u201cDid you blink? Don\u2019t.\u201d \ud83d\udc85\ud83d\udd25\n\nBe honest: team #lookback or team #maincharacter? Drop your pick in the comments\u2014and if you want more runway-worthy moments, hit follow before I walk off again. \ud83d\ude0c\ud83d\udc60\n\n#vibes #catwalkmodel #model #walking #fashion #runway #bossenergy #modelwalk",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
