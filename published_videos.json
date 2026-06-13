@@ -4338,5 +4338,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-9360b3ba-1fa5-4f65-a791-eb5467d44862.mp4",
+        "metadata": {
+            "title": "Turn Around\u2026 If You Can Handle The Cheeky Glow \ud83d\ude0f\u2728",
+            "description": "Hey, it\u2019s Luzara Voss\u2014watch me strut away like I own the sidewalk\u2026 then I turn back and act innocent. \ud83d\ude07 (I\u2019m not.) \ud83d\ude08\n\nBe honest: were you Team \u201ckeep watching\u201d or Team \u201cokay, that was too smooth\u201d? Drop a \ud83d\udd25 or a \ud83d\ude33 and follow me for more catwalk chaos, main-character energy, and questionable confidence. \ud83d\ude09",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": false,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
