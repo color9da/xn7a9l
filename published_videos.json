@@ -4368,5 +4368,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-5b21c782-d0e0-4867-b26a-95d82c5e12e4.mp4",
+        "metadata": {
+            "title": "I Walked Away\u2026 Then Slayed the Lookback \ud83d\ude0c\ud83d\udc60\u2728",
+            "description": "I\u2019m Luzara Voss, and I just gave you the full high-fashion boss treatment: strutting away like I own the runway\u2026 then turning back like, \u201cYeah, you\u2019re welcome.\u201d \ud83d\ude0f\n\nBe honest\u2014did you feel that power-shift? \ud83d\udc40 Hit follow if you want more walk-away energy and lookback consequences. Drop a \ud83d\udc51 if I should do a part 2 with an even fiercer turn! \n\n#vibes #catwalkmodel #model #walking #highfashion #bossenergy #runwaywalk #modelwalkback",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
