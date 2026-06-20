@@ -4653,5 +4653,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-dbe2cfe2-518b-4ec6-8d81-51457ddbd3df.mp4",
+        "metadata": {
+            "title": "I walked away\u2026 but did you catch my cheeky look? \ud83d\udc40",
+            "description": "I\u2019m Luzara Voss\u2014watch me strut away like I own the runway, then turn back with that \u201cyep, you\u201d look \ud83d\ude0f\u2728 Your mission: comment \u201cTURN BACK\u201d if you want me to do it again (bonus points if you tell me what outfit vibe I should wear next). Follow for more model energy, playful poses, and main-character catwalk moments. #vibes #catwalkmodel #model #walking",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
