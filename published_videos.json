@@ -4698,5 +4698,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-0fadecf2-eb02-43e4-a8c9-513b43565782 (3).mp4",
+        "metadata": {
+            "title": "I Turned Around\u2026 So You\u2019d Have to Hit Follow \ud83d\ude0f\ud83d\udc60",
+            "description": "Hey bestie\u2014I'm Luzara Voss, and yes, I\u2019m that model who walks away and then glances back like, \u201cyou still watching?\u201d \ud83d\udc40\u2728\nIf you caught yourself smiling or doing a double-take, don\u2019t be shy: tap follow and tell me in the comments\u2014team slow-walk or team main-character strut? \ud83d\udc85\nWatch till the last second\u2026 I might do it again. \ud83d\ude09\n\n#vibes #catwalkmodel #model #walking",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
