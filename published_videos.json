@@ -4773,5 +4773,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "7e61d996-8b41-4917-b2dc-d635483be488.mp4",
+        "metadata": {
+            "title": "I Turned Around\u2014Now You\u2019re Stuck Watching (Don\u2019t Pretend) \ud83d\ude0c\ud83d\udc60",
+            "description": "I\u2019m Luzara Voss, and yes\u2014I\u2019m the high-fashion problem you didn\u2019t ask for. I walk away like I own the runway, then I look back like I own YOUR attention. Are you team \u201cfollow instantly\u201d or team \u201cjust one more time\u201d? Drop your vote in the comments and hit follow if you want more boss-level catwalk energy\u2014because I\u2019m absolutely not done. \u2728\ud83d\udc60",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": false,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
