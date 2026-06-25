@@ -4863,5 +4863,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "badeda79-9d91-4955-b173-e481927a7c17.mp4",
+        "metadata": {
+            "title": "I turn around\u2026 you blink\u2026 and suddenly you\u2019re following \ud83d\ude0f",
+            "description": "Okay, hi\u2014I\u2019m Luzara Voss. I walk away like I didn\u2019t just steal your attention, then I look back like \u201cyou good?\u201d \ud83d\ude07\u2728 Your move: hit follow before I do it again (because yes, I will).",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": false,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
