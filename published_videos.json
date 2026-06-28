@@ -5028,5 +5028,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-01db0c9c-d1ce-4cd1-8eaa-be6bc413cc2b.mp4",
+        "metadata": {
+            "title": "I Walk Away\u2026 Then I Stare Back Like \u201cYou Good?\u201d \ud83d\ude0c\u2728",
+            "description": "Hey bestie\u2014it's Luzara Voss and I\u2019m serving main-character energy. I walk away like I don\u2019t know you exist\u2026 then I look back to remind you you should\u2019ve pressed follow. \ud83d\ude0f\ud83d\udc81\u200d\u2640\ufe0f\n\nBe honest: do you strut, glide, or full-on power-walk? Drop your vibe in the comments and let me know if I should do a part 2 with even more sass. \ud83d\udc85\ud83d\udd25\n\n#vibes #catwalkmodel #model #walking",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": false,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
