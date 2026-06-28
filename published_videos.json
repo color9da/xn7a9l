@@ -4998,5 +4998,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-07b6cb09-d654-4014-b94c-8192a4e38283.mp4",
+        "metadata": {
+            "title": "Walk, Glance, Repeat\u2014Caught You Looking \ud83d\ude0f | Luzara Voss",
+            "description": "I\u2019m Luzara Voss and in this lil strut I\u2019m doing the classic move: walk away like I don\u2019t care\u2026 then whip back with that \u201cdid you miss me?\u201d look. \ud83d\ude0c\u2728 Okay be honest\u2014should I do part 2 with an even cheekier back-glance or a full runway moment? Drop \u201c2\u201d in the comments and I\u2019ll decide what my next attitude is. Don\u2019t just watch\u2014join the vibes. \ud83d\ude0f\n\n#vibes #catwalkmodel #model #walking",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": false,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
