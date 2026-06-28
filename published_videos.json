@@ -5013,5 +5013,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-68212f5f-ba12-4353-af6f-a3fe105f30c1.mp4",
+        "metadata": {
+            "title": "I Walked Away\u2026 Then Slayed the Lookback \ud83d\ude0c\u2728 | Follow for the next move",
+            "description": "Okay hi\u2014it's Luzara Voss. I strutted away like I don\u2019t care\u2026 and then I looked back because I *do* care. \ud83d\ude0f\n\nBe honest: did that look make you forget what you were doing? Hit follow if you want more sassy catwalk energy, main-character confidence, and zero apologies. Drop a \ud83d\udc85 if you\u2019re team \u201clookback\u201d!",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
