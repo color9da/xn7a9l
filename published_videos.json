@@ -5163,5 +5163,20 @@
                 "youtube": false
             }
         }
+    },
+    {
+        "video_name": "grok-video-ed0c6b19-b7ad-490e-b874-06060750827b.mp4",
+        "metadata": {
+            "title": "I Walk Away\u2026 Then I\u2019m Like \u201cPlot Twist \ud83d\udc40\u201d",
+            "description": "Wait\u2014before I keep walking, look back with me. \ud83d\ude0f I\u2019m Luzara Voss, serving cheeky catwalk energy one step at a time\u2026 and yes, I\u2019m totally doing the \u201caccidentally caught you staring\u201d thing. \n\nBe honest: do you want me to walk past or swerve back for a part 2? Drop a \ud83e\udee3 or a \ud83d\udd25 and follow\u2014because I\u2019m about to make this whole \u201cturn around\u201d moment a series. \n\n#vibes #catwalkmodel #model #walking",
+            "success_flags": {
+                "instagram_reel": true,
+                "instagram_story": true,
+                "facebook_reel": true,
+                "facebook_story": true,
+                "threads": false,
+                "youtube": false
+            }
+        }
     }
 ]
