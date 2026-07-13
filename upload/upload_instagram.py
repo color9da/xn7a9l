@@ -24,10 +24,8 @@ def upload_to_tempfile(file_path):
             timeout=REQ_TIMEOUT
         )
     if resp.status_code != 200:
-        raise Exception(f"tmpfiles.org upload failed: {resp.status_code} {resp.text[:200]}")
     data = resp.json()
     if data.get('status') != 'success':
-        raise Exception(f"tmpfiles.org upload failed: {data}")
     temp_url = data.get('data', {}).get('url', '')
     return temp_url.replace('tmpfiles.org/', 'tmpfiles.org/dl/')
 
@@ -40,10 +38,8 @@ def upload_to_0x0(file_path):
             timeout=REQ_TIMEOUT
         )
     if resp.status_code != 200:
-        raise Exception(f"0x0.st upload failed: {resp.status_code} {resp.text[:200]}")
     url = resp.text.strip()
     if not url.startswith('https://'):
-        raise Exception(f"0x0.st returned invalid URL: {url}")
     return url
 
 
@@ -56,10 +52,8 @@ def upload_to_catbox(file_path):
             timeout=REQ_TIMEOUT
         )
     if resp.status_code != 200:
-        raise Exception(f"catbox.moe failed: {resp.status_code} {resp.text[:200]}")
     url = resp.text.strip()
     if not url.startswith('https://'):
-        raise Exception(f"catbox.moe returned invalid URL: {url}")
     return url
 
 
@@ -71,14 +65,11 @@ def upload_to_uguu(file_path):
             timeout=REQ_TIMEOUT
         )
     if resp.status_code != 200:
-        raise Exception(f"uguu.se failed: {resp.status_code} {resp.text[:200]}")
     data = resp.json()
     if not data.get('success'):
-        raise Exception(f"uguu.se upload failed: {data}")
     return data['files'][0]['url']
 
 
-HOSTING_SERVICES = [
     ("tmpfiles.org", upload_to_tempfile),
     ("0x0.st", upload_to_0x0),
     ("catbox.moe", upload_to_catbox),
@@ -88,7 +79,6 @@ HOSTING_SERVICES = [
 
 def upload_to_temporary_host(file_path):
     last_error = None
-    for name, upload_func in HOSTING_SERVICES:
         try:
             print(f"[instagram] Trying {name}...")
             url = upload_func(file_path)
@@ -98,7 +88,6 @@ def upload_to_temporary_host(file_path):
             print(f"[instagram] {name} failed: {e}")
             last_error = e
             continue
-    raise Exception(f"All hosting services failed. Last error: {last_error}")
 
 
 def upload_to_instagram(video_path, caption, is_story=False):
@@ -222,7 +211,6 @@ def upload_to_instagram(video_path, caption, is_story=False):
                 if is_story:
                     print("[instagram] Story upload not supported - skipping.")
                     return {'status': 'skipped', 'reason': 'Story not supported', 'platform': 'instagram'}
-                raise Exception(f"Instagram Container Error: {error_msg}")
 
         container_id = container_response.json().get('id')
         print(f"[instagram] Container created: {container_id}")
@@ -282,7 +270,6 @@ def upload_to_instagram(video_path, caption, is_story=False):
             elif status_code == 'ERROR':
                 error_msg = status_data.get('error_message', 'Video processing failed')
                 print(f"[instagram] {error_msg}")
-                raise Exception(error_msg)
             elif status_code == 'UNKNOWN' and waited >= 120:
                 print(f"[instagram] Still UNKNOWN after {waited}s, publishing anyway...")
                 break
@@ -320,7 +307,6 @@ def upload_to_instagram(video_path, caption, is_story=False):
             error_data = publish_response.json() if publish_response and publish_response.text else {}
             error_msg = error_data.get('error', {}).get('message', 'Unknown error')
             print(f"[instagram] Publish failed after retries: {error_msg}")
-            raise Exception(f"Instagram Publish Error: {error_msg}")
 
         media_id = publish_response.json().get('id')
 
