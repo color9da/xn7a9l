@@ -124,6 +124,23 @@ def upload_to_instagram(video_path, caption, is_story=False):
                     user_id = detected_id
         except Exception as e:
             print(f"[instagram] ID verification error: {e}")
+    if access_token.startswith('EAAM'):
+        print("[instagram] EAAM token detected, resolving IG Business Account...")
+        try:
+            me_resp = requests.get(f"https://graph.facebook.com/me?fields=id,name&access_token={access_token}", timeout=10)
+            if me_resp.status_code == 200:
+                page_id = me_resp.json().get('id')
+                print(f"[instagram] Page ID: {page_id}")
+                ig_resp = requests.get(f"https://graph.facebook.com/{page_id}?fields=instagram_business_account&access_token={access_token}", timeout=10)
+                if ig_resp.status_code == 200:
+                    ig = ig_resp.json().get('instagram_business_account')
+                    if ig:
+                        ig_id = ig.get('id')
+                        if ig_id and ig_id != user_id:
+                            print(f"[instagram] Found IG Business Account: {ig_id}")
+                            user_id = ig_id
+        except Exception as e:
+            print(f"[instagram] EAAM IG ID error: {e}")
 
     if not user_id:
         print("[instagram] Skipping - INSTAGRAM_ACCOUNT_ID not set")
@@ -188,8 +205,8 @@ def upload_to_instagram(video_path, caption, is_story=False):
 
         if not is_story:
             container_params['caption'] = caption_limited
-            container_params['share_to_feed'] = 'false'
-            container_params['thumb_offset'] = '5000'
+
+
 
         container_response = requests.post(container_url, params=container_params, timeout=60)
 
@@ -224,7 +241,7 @@ def upload_to_instagram(video_path, caption, is_story=False):
         while waited < max_wait:
             status_url = f"https://graph.facebook.com/v21.0/{container_id}"
             status_params = {
-                'fields': 'status_code',
+                'fields': 'status_code,status',
                 'access_token': access_token
             }
 
@@ -235,13 +252,12 @@ def upload_to_instagram(video_path, caption, is_story=False):
 
             if not status_response or status_response.status_code != 200:
                 try:
-                    status_url = f"https://graph.instagram.com/v21.0/{container_id}"
-                    status_response = requests.get(status_url, params=status_params, timeout=(10, 20))
+                    pass
                 except Exception:
                     pass
 
             status_data = status_response.json() if status_response else {}
-            status_code = status_data.get('status_code', 'UNKNOWN')
+            status_code = status_data.get('status_code') or status_data.get('status', 'UNKNOWN')
 
             is_auth_error = False
             if status_data and 'error' in status_data:
@@ -299,9 +315,7 @@ def upload_to_instagram(video_path, caption, is_story=False):
             print(f"[instagram] Publish attempt {attempt+1} failed. Retrying...")
             time.sleep(10)
 
-            if attempt == max_publish_retries - 1:
-                publish_url = f"https://graph.instagram.com/v21.0/{user_id}/media_publish"
-                publish_response = requests.post(publish_url, params=publish_params, timeout=60)
+
 
         if not publish_response or publish_response.status_code != 200:
             error_data = publish_response.json() if publish_response and publish_response.text else {}
